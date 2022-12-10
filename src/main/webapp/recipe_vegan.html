@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>부트스트랩 웹 페이지</title>
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="icon" href="./images/logo.png"/>
+<style type="text/css">
+	.jumbotron {
+		background-image: url("./images/strawberry.jpg");
+		background-size: 25em;
+		color: ivory;
+		text-shadow: 0.2em 0.2em 0.2em black;
+	}
+	
+	.navbar {
+		background-color: #FFF8DC;
+	}
+	
+	
+	
+</style>
+<!-- jquery -->
+<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+<!-- javascript -->
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+</head>
+<body>
+	<!-- 내비게이션 -->
+	<nav class="navbar navbar-default"> 
+		<div class="container-fluid">
+			<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-toggle"
+				aria-expanded="false">
+				<span class="sr-only"></span>
+				
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a class="navbar-brand" href="index.html">Jihye's HomeBaking</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="nav-toggle">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="index.html">Main</a>
+					</li>
+					<li> 
+						<a href="./recipe.html">Recipe</a>
+					</li>
+					<li>
+						<a href="./videoRecipe.html?mallName=View">Video Recipe</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">
+							ShoppingMall<span class="caret"></span> <!-- 아래 방향 세모 아이콘 -->	
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="http://wellbaking.com/" target="_blank">웰베이킹</a></li>
+							<li><a href="https://bakingmon.com/" target="_blank">베이킹몬</a></li>
+							<li><a href="http://bakingmam.alltheway.kr/" target="_blank">베이킹맘</a></li>
+							<li><a href="https://www.bakingschool.co.kr/" target="_blank">베이킹스쿨</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="search"/>
+					</div>
+					<button type="button" class="btn btn-outline-warning">Search</button>
+				</form>
+				
+				<div class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">
+							To connect<span class="caret"></span> <!-- 아래 방향 세모 아이콘 -->
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="./loginForm.html">Sign In</a></li>
+							<li><a href="./registerForm.html">Sign Up</a></li>
+						</ul>
+					</li>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- 여기부터 -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-primary">
+					
+					<div class="panel-heading" style="background-color:#FFF8DC; color:gray;">
+						<h3 class="panel-title">
+							<span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;Vanilla almond cream muffin						</h3>
+					</div>
+					
+					<div class="panel-body">
+						<div class="media">
+						
+							<div class="media-left">
+								<img class="media-object" width="300px" height="300px" src="./images/bakingVegan.jpg"/>
+							</div>
+								
+							<div class="media-body" >
+								<h4 class="media-heading" style="position: relative; left: 50px;">Vegan muffin</h4>
+								
+								<div style="column-count: 2; column-rule: 1px solid #ccc;">
+								<div style="position: relative; left: 50px;">
+									<p>
+										<b>muffin Ingredients</b>
+										<li>unsalted butter: 85g</li>
+										<li>oatmeal flour: 65g</li>
+										<li>sunflower oil: 1minicup</li>
+										<li>hazelnut powder: 20g</li>
+										<li>baking powder: 3g</li>
+										<li>sugar: 70g</li>
+										<li>soymilk: 56g</li>
+										<li>apple cider vinegar: 1minicup</li>
+									</p>
+						
+								</div>
+								<div>
+									<p>
+										1. Add the powder and mix it all together.<br/>
+										2. Add apple vinegar and mix.<br/>
+										3. Add sunflower oil and mix well.<br/>
+										4. Lastly, add room temperature soymilk and mix it. That's it!<br/>
+										5. After squeezing the dough into a mold, place it in the oven and bake it at 170 degrees for 30 minutes.<br/>
+										6. You can add blueberries or raspberries depending on your taste!<br/>
+									</p>
+								</div>
+								</div>
+						</div>
+					</div>
+					
+					<table class="table">
+						<thead>
+							<tr>
+								<td>Baking</td>
+								<td>Recipe Number</td>
+								<td>Recipe Owner</td>		
+								<td>Date</td>		
+							</tr>
+						</thead>
+					
+						<tbody>
+							<tr>
+								<td><a href="./recipe.html?recipeName=chocolate">Muffin_chocolate</a></td>
+								<td>1</td>
+								<td>Jihye</td>
+								<td>2022.04.21</td>
+							</tr>
+							<tr>
+								<td><a href="./recipe_vanilla.html?recipeName=Vanilla">Muffin_vanilla</a></td>
+								<td>2</td>
+								<td>Jihye</td>
+								<td>2022.04.24</td>
+							</tr>
+							<tr>
+								<td><a href="./recipe_mint.html?recipeName=Mint">Muffin_mint</a></td>
+								<td>3</td>
+								<td>Jihye</td>
+								<td>2022.04.30</td>
+							</tr>
+							<tr>
+								<td><a href="./recipe_vegan.html?recipeName=Vegan">Muffin_vegan</a></td>
+								<td>4</td>
+								<td>Jihye</td>
+								<td>2022.05.02</td>
+							</tr>
+							<!-- <tr>
+								<td colspan="4">
+									<div class="media-heading"></div>
+								</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- 여기까지 recipe.html에 코딩해 넣는 내용 -->
+	
+    <!-- 풋터 -->  
+	<footer style="background-color: #FFF8DC; color:gray">
+		<div class="container">
+			<div class="row">
+				<!-- 2 -->
+				<div class="col-sm-2" style="text-align:center;">
+					<h5>Copyright &copy; </h5>
+					<h5>ChuJiHye<br/>(추지혜)</h5>
+				</div>
+				
+				<!-- 4 -->
+				<div class="col-sm-4">
+					<h5>representative introduction</h5>
+					<h5>I'm CEO of Jihye's HomeBaking. I created a home baking site where you can easily enjoy it in a mini oven at home. Let's enjoy it together.</h5>
+				</div>
+				
+				<!-- 2 -->
+				<div class="col-sm-2" style="text-align:center;">
+					<h5>Navigation</h5>
+					<div class="list-group">
+						<a href="index.html" class="list-group-item">Main</a>
+						<a href="./recipe.html" class="list-group-item">Recipe</a>
+						<a href="#" class="list-group-item">ShoppingMall</a>
+					</div>
+				</div>
+				
+				<!-- 2 -->
+				<div class="col-sm-2" style="text-align:center;">
+					<h5>SNS</h5>
+					<div class="list-group">
+						<a href="https://ko-kr.facebook.com/" class="list-group-item" target="_blank">Facebook</a>
+						<a href="https://www.instagram.com/?hl=ko" class="list-group-item" target="_blank">Instagram</a>
+						<a href="https://twitter.com/?lang=ko" class="list-group-item" target="_blank">Twitter</a>
+					</div>
+				</div>
+				
+				<!-- 2 -->
+				<div class="col-sm-2">
+					<h5 style="text-align: center;">
+						<span class="glyphicon glyphicon-ok"></span>&nbsp;by ChuJiHye
+					</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

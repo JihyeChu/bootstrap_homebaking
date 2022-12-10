@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>부트스트랩 웹 페이지</title>
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="icon" href="./images/logo.png"/>
+<style type="text/css">
+	.jumbotron {
+		background-image: url("./images/strawberry.jpg");
+		background-size: 25em;
+		color: ivory;
+		text-shadow: 0.2em 0.2em 0.2em black;
+	}
+	
+	.navbar {
+		background-color: #FFF8DC;
+	}
+	
+</style>
+<!-- jquery -->
+<script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+<!-- javascript -->
+<script type="text/javascript" src="./js/bootstrap.js"></script>
+</head>
+<body>
+	<!-- 내비게이션 -->
+	<nav class="navbar navbar-default"> 
+		<div class="container-fluid">
+			<div class="navbar-header">
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-toggle"
+				aria-expanded="false">
+				<span class="sr-only"></span>
+				
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a class="navbar-brand" href="index.html">Jihye's HomeBaking</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="nav-toggle">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="index.html">Main</a>
+					</li>
+					<li> 
+						<a href="./recipe.html">Recipe</a>
+					</li>
+					<li>
+						<a href="./videoRecipe.html?mallName=View">Video Recipe</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">
+							ShoppingMall<span class="caret"></span> <!-- 아래 방향 세모 아이콘 -->	
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="http://wellbaking.com/" target="_blank">웰베이킹</a></li>
+							<li><a href="https://bakingmon.com/" target="_blank">베이킹몬</a></li>
+							<li><a href="http://bakingmam.alltheway.kr/" target="_blank">베이킹맘</a></li>
+							<li><a href="https://www.bakingschool.co.kr/" target="_blank">베이킹스쿨</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="search"/>
+					</div>
+					<button type="button" class="btn btn-outline-warning">Search</button>
+				</form>
+				
+				<div class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">
+							To connect<span class="caret"></span> <!-- 아래 방향 세모 아이콘 -->
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="./loginForm.html">Sign In</a></li>
+							<li><a href="./registerForm.html">Sign Up</a></li>
+						</ul>
+					</li>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">Jihye's HomeBaking</h1>
+			<p class="text-center">
+				It is a home-baking site that you can enjoy easily at home with a mini oven.
+			</p>
+			<p class="text-center">
+				<a class="btn btn-warning btn-lg" href="./recipe.html" role="button">Going to see the recipe.</a>
+			</p>
+		</div>
+	
+		
+		
+		<div class="row">
+			<!-- 4 -->
+			<div class="col-md-4">
+				<h4>Characteristics of Jihye's Homebaking</h4>
+				<p>There are many different recipes.</p>
+				<p>
+					<a class="btn btn-warning" data-target="#modal" data-toggle="modal">Learn More</a>
+				</p>
+			</div>
+			
+			<!-- 4 -->
+			<div class="col-md-4">
+				<h4>Check out more recipes.</h4>
+				<p>Do you want it?</p>
+				<p>
+					<a class="btn btn-warning" href="./recipe.html">Learn More</a>
+				</p>
+			</div>
+			
+			<!-- 4 -->
+			<div class="col-md-4">
+				<h4>View video version recipe.</h4>
+				<p>Do you want it?</p>
+				<p>
+					<a class="btn btn-warning" href="./videoRecipe.html">Learn More</a>
+				</p>
+			</div>
+			
+			
+		</div><hr/><br/>
+		
+		<!-- 메인 컨텐츠 -->
+		<div class="panel panel-primary">
+		
+			<!-- heading -->
+			<div class="panel-heading" style="background-color:#FFF8DC; color:gray;">
+				<h3 class="panel-title">
+					<span class="glyphicon-pencil"></span>&nbsp;&nbsp;&nbsp;up-to-date recipe list
+				</h3>
+			</div>
+			
+			<!-- body -->
+			<div class="panel-body">
+			
+				<!-- 미디어 1 -->
+				<div class="media">
+					<div class="media-left">
+						<a href="./recipe.html?recipeName=chocolate">
+							<img class="media-object" src="./images/baking2.jpg"/>
+						</a>
+					</div>
+					
+					<div class="media-left">
+						<h4 class="media-heading"  style="position: relative; left: 20px;">
+							<a href="./recipe.html?recipeName=chocolate">Making a chocolate Cream muffin.</a>&nbsp;&nbsp;
+							<span class="badge">NEW</span>
+						</h4>
+						<p style="position: relative; left: 20px;">
+						If you want to taste the best chocolate muffin, know this recipe!<br/>
+						It's a cute muffin that's good to give someone as a present.<br/>
+						And when you're in a bad mood, you think of sweet chocolate, right?<br/>
+						Here's a magic recipe for you.<br/>
+						Let's make it right now.<br/>
+						</p>
+					</div>	
+				</div>
+				
+				<!-- 미디어 2 -->
+				<div class="media">
+					<div class="media-left">
+						<a href="./recipe_vanilla.html?recipeName=Vanilla">
+							<img class="media-object" src="./images/baking1.jpg" width="240px"/>
+						</a>
+					</div>
+					
+					<div class="media-left">
+						<h4 class="media-heading" style="position: relative; left: 20px;">
+							<a href="./recipe_vanilla.html?recipeName=Vanilla">Making a Vanilla almond cream muffin.</a>&nbsp;&nbsp;
+							<span class="badge">NEW</span>
+						</h4>
+						<p style="position: relative; left: 20px;">
+						If you want to taste the best vanilla almond cream muffin, know this recipe!<br/>
+						It's a cute muffin that's good to give someone as a present.<br/>
+						It's a muffin that even people who don't like sweet foods will like.<br/>
+						The cute cherry on top makes my mouth water!<br/>
+						Don't you want to hurry up and make it?<br/>
+						</p>
+					</div>	
+				</div>
+				
+				<!-- 미디어 3 -->
+				<div class="media">
+					<div class="media-left">
+						<a href="./recipe_mint.html?recipeName=Mint">
+							<img class="media-object" src="./images/baking3.jpg" width="240px"/>
+						</a>
+					</div>
+					
+					<div class="media-left">
+						<h4 class="media-heading" style="position: relative; left: 20px;">
+							<a href="./recipe_mint.html?recipeName=Mint">Making a Mint Chococream muffin.</a>&nbsp;&nbsp;
+							<span class="badge">NEW</span>
+						</h4>
+						<p style="position: relative; left: 20px;">
+						This is an opportunity to make popular mint chocolate muffins.<br/>
+						If you want to taste the best mint chocolate muffin, know this recipe!<br/>
+						It's a cute muffin that's good to give someone as a present.<br/>
+						If you don't like mint, don't even look at the recipe!!!<br/>
+						</p>
+					</div>	
+				</div>
+				
+				<!-- 미디어 4 -->
+				<div class="media">
+					<div class="media-left">
+						<a href="./recipe_vegan.html?recipeName=Vegan">
+							<img class="media-object" src="./images/bakingVegan.jpg" width="240px"/>
+						</a>
+					</div>
+					
+					<div class="media-left">
+						<h4 class="media-heading" style="position: relative; left: 20px;">
+							<a href="./recipe_vegan.html?recipeName=Vegan">Making a Vegan muffin.</a>&nbsp;&nbsp;
+							<span class="badge">NEW</span>
+						</h4>
+						<p style="position: relative; left: 20px;">
+						If you want to taste the best vegan muffin, remember this recipe!<br/>
+						It's a healthy and tasty muffin.<br/>
+						If you have a vegetarian friend, it's perfect for a gift!<br/>		
+						If you're looking for healthy snacks to enjoy, keep this recipe in mind!<br/>
+						It's a good muffin to make with kids, too~</br>	
+						</p>		
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div><!-- /container -->
+	
+    <!-- 모달 팝업으로 표시할 내용 -->
+    <div class="modal" id="modal">
+    	<div class="modal-dialog">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				Characteristics of Jihye's Homebaking
+    				<button class="close" data-dismiss="modal">&times;</button>
+    			</div>
+    			<div class="modal-body" style="text-align: center;">
+    				There are many different recipes.<br/>
+    				You can learn by communicating with teachers.<br/>
+    				Above all, if you register your own recipe, you will receive a special muffin.<br/>
+    				<img src="./images/baking1.jpg" style="width:170px; height:150px;"/>
+    				<img src="./images/baking2.jpg" style="width:170px; height:150px;"/>
+    				<img src="./images/baking.jpg" style="width:170px; height:150px;"/>
+    			</div>
+    		</div>
+    	</div>	
+    </div>
+	<!-- 메인 컨텐츠 -->
+    
+    <!-- 풋터 -->  
+	<footer style="background-color: #FFF8DC; color:gray">
+		<div class="container">
+			<div class="row">
+				<!-- 2 -->
+				<div class="col-sm-2" style="text-align:center;">
+					<h5>Copyright &copy; </h5>
+					<h5>ChuJiHye<br/>(추지혜)</h5>
+				</div>
+				
+				<!-- 4 -->
+				<div class="col-sm-4">
+					<h5>representative introduction</h5>
+					<h5>I'm CEO of Jihye's HomeBaking. I created a home baking site where you can easily enjoy it in a mini oven at home. Let's enjoy it together.</h5>
+				</div>
+				
+				<!-- 2 -->
+				<div class="col-sm-2" style="text-align:center;">
+					<h5>Navigation</h5>
+					<div class="list-group">
+						<a href="index.html" class="list-group-item">Main</a>
+						<a href="./recipe.html" class="list-group-item">Recipe</a>
+						<a href="./videoRecipe.html?mallName=View" class="list-group-item">ShoppingMall</a>
+					</div>
+				</div>
+				
+				<!-- 2 -->
+				<div class="col-sm-2" style="text-align:center;">
+					<h5>SNS</h5>
+					<div class="list-group">
+						<a href="https://ko-kr.facebook.com/" class="list-group-item" target="_blank">Facebook</a>
+						<a href="https://www.instagram.com/?hl=ko" class="list-group-item" target="_blank">Instagram</a>
+						<a href="https://twitter.com/?lang=ko" class="list-group-item" target="_blank">Twitter</a>
+					</div>
+				</div>
+				
+				<!-- 2 -->
+				<div class="col-sm-2">
+					<h5 style="text-align: center;">
+						<span class="glyphicon glyphicon-ok"></span>&nbsp;by ChuJiHye
+					</h5>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
